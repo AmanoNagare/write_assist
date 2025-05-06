@@ -52,7 +52,8 @@ fn view(app: &App, model: &Model, frame: Frame) {
         .x_y(0.0, 0.0) // 中央に配置
         .font(model.font.clone())
         .font_size(50) // フォントを指定
-        .color(BLACK);
+        .color(BLACK)
+        .wh(vec2(1000.0, 0.0)); 
     draw.to_frame(app, &frame).unwrap();
 }
 
